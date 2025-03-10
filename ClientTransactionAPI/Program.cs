@@ -9,7 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSqlite<ApplicationDbContext>("Data Source=./database.db;Version=3;");
+builder.Services.AddSqlite<ApplicationDbContext>("Data Source=./database.db;");
+builder.Services.AddScoped<ApplicationDbContext>();
 
 var app = builder.Build();
 
