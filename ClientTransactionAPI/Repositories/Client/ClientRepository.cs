@@ -4,6 +4,6 @@ using ClientTransactionAPI.Repositories.Generic;
 namespace ClientTransactionAPI.Repositories.Client;
 
 public class ClientRepository(ApplicationDbContext context)
-    : Repository<Models.Client.Client>(context), IClientRepository
+    : Repository<Models.Client>(context), IClientRepository
 {
 }

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using ClientTransactionAPI.Models.Enums;
 
-namespace ClientTransactionAPI.Models.Transaction;
+namespace ClientTransactionAPI.Models;
 
 public class Transaction
 {

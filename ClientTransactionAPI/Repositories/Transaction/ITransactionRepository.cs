@@ -2,6 +2,6 @@
 
 namespace ClientTransactionAPI.Repositories.Transaction;
 
-public interface ITransactionRepository : IRepository<Models.Transaction.Transaction>
+public interface ITransactionRepository : IRepository<Models.Transaction>
 {
 }

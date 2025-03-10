@@ -2,6 +2,6 @@
 
 namespace ClientTransactionAPI.Repositories.Client;
 
-public interface IClientRepository : IRepository<Models.Client.Client>
+public interface IClientRepository : IRepository<Models.Client>
 {
 }

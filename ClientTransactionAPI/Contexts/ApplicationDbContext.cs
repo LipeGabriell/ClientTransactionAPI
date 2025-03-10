@@ -1,5 +1,4 @@
-﻿using ClientTransactionAPI.Models.Client;
-using ClientTransactionAPI.Models.Transaction;
+﻿using ClientTransactionAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClientTransactionAPI.Contexts;

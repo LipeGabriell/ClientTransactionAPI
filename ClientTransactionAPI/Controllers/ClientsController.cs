@@ -1,4 +1,5 @@
-﻿using ClientTransactionAPI.Models.Client;
+﻿using ClientTransactionAPI.DTOs.Response;
+using ClientTransactionAPI.Models;
 using ClientTransactionAPI.Repositories.Client;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +10,7 @@ namespace ClientTransactionAPI.Controllers;
 public class ClientsController(IClientRepository repository) : Controller
 {
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<Client?>> Get(int id)
+    public async Task<ActionResult<ClientResponse?>> Get(int id)
     {
         var client = await repository.Get(client => client.Id == id);
         if (client == null) return NotFound();
